@@ -1,0 +1,77 @@
+.box1{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    margin-bottom: 10px;
+    transform: scale(1.7, 1.7);
+    margin-left: 200px;
+    margin-top: 120px;
+}
+.rot{
+    background-color: palevioletred;
+    color: aliceblue;
+    transform: rotate(30deg);
+    padding: 50px;
+    transform-origin: 80% 40%;
+}
+.rott{
+    transform: skewX(30deg);
+}
+.box2:hover{
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    color: crimson;
+    transition: width, height;
+    transition-delay: 4s;
+    transition-delay: 2s;
+}
+.box3{
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    color: #000;
+    background-color: green;
+    position: relative;
+    animation-name: test;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;  animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes test{
+     0%{
+      background-color: red;
+     left : 0px;
+     top 0;
+     }
+25%{
+   background-color: yellow;
+    left: 100px;
+    top: 0px;
+}
+    50%{
+        
+   background-color: yellow;
+    left: 100px;
+    top: 100px;
+}
+    }
+    75%{
+    background:-color: aqua;
+    left:0;
+    top: 100px;
+}
+    100%{
+    background-color: black;
+        left: 0;
+        top: 100px;
+}
+  /*  from{
+      top: 0px;
+        }
+    to{
+    top:200px;
+        background: red;
+    }*/
+}
